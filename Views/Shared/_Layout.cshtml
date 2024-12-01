@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"] - My News Site</title>
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+<body>
+    <header>
+        <h1>My News Site</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/News">News</a>
+            <a href="/Contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+    <footer>
+        <p>&copy; @DateTime.Now.Year My News Site</p>
+    </footer>
+</body>
+</html>

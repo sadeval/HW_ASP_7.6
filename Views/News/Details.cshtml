@@ -1,0 +1,12 @@
+﻿@model News
+@{
+    ViewData["Title"] = Model.Title;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Model.Title</h2>
+<p>@Model.Date.ToString("dd MMMM yyyy")</p>
+<div>
+    @Model.Content
+</div>
+<a href="@Url.Action("Index", "News")">Back to News List</a>
